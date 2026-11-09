@@ -16,7 +16,7 @@ In sub-Saharan industrial systems, energy controllers face conflicting operation
 When factory loads drop on a sunny day, a standard controller simply wastes (curtails) clean solar power. Mwanga EMS uses machine learning forecasts and predictive optimization to intelligently store that surplus instead.
 
 ## Split-Architecture Design
-To maximize safety and computational efficiency, the project splits control into two distinct layers:
+To maximize safety and computational efficiency, the project splits control into three distinct layers:
 - **Layer 3 (The Planner):** Runs on an edge gateway (Python). It digests day-ahead machine learning weather/load forecasts and runs a receding-horizon optimization algorithm to schedule the battery.
 - **Layer 2 (The Safety Supervisor):** Runs on a physical microcontroller (C++ firmware) with a fast 100ms deterministic execution loop. It strictly enforces zero-export boundaries and genset protection, ignoring the planner if communication fails.
 - **Layer 1 (Physical Protection):** Independent hardware reverse-power and over-current relays.
