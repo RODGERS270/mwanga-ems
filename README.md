@@ -1,6 +1,6 @@
 # Mwanga EMS: An Open, Forecast-Aware Hybrid Microgrid Controller
 
-Mwanga EMS  *Light*) is an open-source, split-architecture Energy Management System (EMS) designed for Commercial and Industrial (C&I) microgrids in East Africa. 
+Mwanga (*Light*) EMS is an open-source, split-architecture Energy Management System (EMS) designed for Commercial and Industrial (C&I) microgrids in East Africa. 
 
 The system optimizes the operational dispatch of a grid-tied system consisting of:
 - 500 kWp Solar PV Array
