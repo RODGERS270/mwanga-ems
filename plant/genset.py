@@ -6,7 +6,9 @@ and thermal safety loading thresholds of a 1 MVA C&I generator.
 """
 
 class DieselGenerator:
-    def __init__(self, capacity_kva=1000.0, power_factor=0.8, min_load_pct=0.30, idle_fuel_coeff=0.08, load_fuel_coeff=0.22):
+    def __init__(self, capacity_kva=1000.0, power_factor=0.8,
+                  min_load_pct=0.30, idle_fuel_coeff=0.08,
+                    load_fuel_coeff=0.22):
         # 1. Physical Capacity & Sizing (1 MVA Reference Case)
         self.capacity_kva = capacity_kva
         self.power_factor = power_factor
